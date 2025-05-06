@@ -13,7 +13,7 @@ async function deployMarketplace(paymentTokenAddress) {
 
 async function main() {
     // Read the payment token address from the file
-    const filePath = path.join(__dirname, 'addresses', 'CrossChainToken_Shimmer.txt');
+    const filePath = path.join(__dirname, 'addresses', 'CrossChainToken_Iota.txt');
     const paymentTokenAddress = fs.readFileSync(filePath, 'utf8').trim();
 
     // Deploy the Marketplace contract
@@ -23,7 +23,7 @@ async function main() {
     const addressDirectory = path.join(__dirname, 'addresses');
     fs.mkdirSync(addressDirectory, { recursive: true });
 
-    const marketplaceFilePath = path.join(addressDirectory, 'MarketplaceV2_Shimmer.txt');
+    const marketplaceFilePath = path.join(addressDirectory, 'MarketplaceV2_Iota.txt');
     fs.writeFileSync(marketplaceFilePath, deployedMarketplaceAddress);
 
     console.log(`Marketplace contract address written to ${marketplaceFilePath}`);

@@ -16,11 +16,11 @@ async function approveNFTTransfer(marketplaceAddress, myERC721Address, tokenId) 
 
 async function main() {
     // Load the marketplace address
-    const marketplaceAddressPath = path.join(__dirname, 'addresses', 'MarketplaceV2_Shimmer.txt');
+    const marketplaceAddressPath = path.join(__dirname, 'addresses', 'MarketplaceV2_Iota.txt');
     const marketplaceAddress = fs.readFileSync(marketplaceAddressPath, 'utf8').trim();
 
     // Load the MyERC721 contract address
-    const myERC721AddressPath = path.join(__dirname, 'addresses', 'MyONFT721_Shimmer.txt');
+    const myERC721AddressPath = path.join(__dirname, 'addresses', 'MyONFT721_Iota.txt');
     const myERC721Address = fs.readFileSync(myERC721AddressPath, 'utf8').trim();
 
     // Specify the tokenId you want to approve for transfer

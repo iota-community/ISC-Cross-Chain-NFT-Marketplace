@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 
 
-// Via the ProxyONFT721 contract, send erc721 tokens on the source chain (e.g. BNB testnet) to the destination chain (e.g. Shimmer EVM testnet)
+// Via the ProxyONFT721 contract, send erc721 tokens on the source chain (e.g. BNB testnet) to the destination chain (e.g. Iota EVM testnet)
 async function sendONFT(
   proxyONFTContractAddress,
   onftContractAddress,
@@ -95,7 +95,7 @@ async function main() {
   
 
     const proxyONFTContractAddressPath = path.join(__dirname, 'addresses', 'MyProxyONFT721.txt');
-    const onftContractAddressPath = path.join(__dirname, 'addresses', 'MyONFT721_Shimmer.txt');
+    const onftContractAddressPath = path.join(__dirname, 'addresses', 'MyONFT721_Iota.txt');
 
     const proxyONFTContractAddress = fs.readFileSync(proxyONFTContractAddressPath, 'utf8').trim();
     const onftContractAddress = fs.readFileSync(onftContractAddressPath, 'utf8').trim();

@@ -80,7 +80,7 @@ contract CrossChainAgent is NonblockingLzApp {
             _tokenId
         );
 
-        // Send the payload to the agent on Shimmer
+        // Send the payload to the agent on iota
         _lzSend(
             _dstChainId,
             payload,

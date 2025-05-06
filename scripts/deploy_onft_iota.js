@@ -24,7 +24,7 @@ async function main() {
     const addressDirectory = path.join(__dirname, 'addresses');
     fs.mkdirSync(addressDirectory, { recursive: true });
 
-    const filePath = path.join(addressDirectory, 'MyONFT721_Shimmer.txt');
+    const filePath = path.join(addressDirectory, 'MyONFT721_Iota.txt');
     fs.writeFileSync(filePath, deployedAddress);
 
     console.log(`Contract address written to ${filePath}`);

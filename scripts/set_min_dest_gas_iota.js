@@ -21,7 +21,7 @@ async function setMinDstGas(proxyONFTAddress, chainId, minDstGas) {
 // Example usage
 async function main() {
 
-    const proxyAddressPath = path.join(__dirname, 'addresses', 'MyONFT721_Shimmer.txt');
+    const proxyAddressPath = path.join(__dirname, 'addresses', 'MyONFT721_Iota.txt');
 
     // Read the MyONFT721 address from the file
     const MyONFT721Address = fs.readFileSync(proxyAddressPath, 'utf8').trim();

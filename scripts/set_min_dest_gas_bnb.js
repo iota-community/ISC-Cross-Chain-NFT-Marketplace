@@ -26,11 +26,11 @@ async function main() {
     // Read the MyProxyONFT721 address from the file
     const myProxyONFT721Address = fs.readFileSync(proxyAddressPath, 'utf8').trim();
    
-    const shimmerchainId = 10230; 
+    const iotachainId = 10230; 
 
     const minDstGas = 100500;
 
-    await setMinDstGas(myProxyONFT721Address, shimmerchainId, minDstGas);
+    await setMinDstGas(myProxyONFT721Address, iotachainId, minDstGas);
 }
 
 main()
