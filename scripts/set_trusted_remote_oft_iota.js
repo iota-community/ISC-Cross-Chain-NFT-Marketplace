@@ -19,11 +19,13 @@ async function setTrustedRemote(myTokenAddress,remoteAddress, chainId) {
 // Example usage
 async function main() {
 
-    const tokenAddressPath = path.join(__dirname, 'addresses', 'Messanger_shimmer.txt');
+    const tokenAddressPath = path.join(__dirname, 'addresses', 'CrossChainToken_Iota.txt');
     const myTokenAddress = fs.readFileSync(tokenAddressPath, 'utf8').trim();
 
-    const tokenShimmerPath = path.join(__dirname, 'addresses', 'Messanger_bnb.txt');
-    const remoteAddress = fs.readFileSync(tokenShimmerPath, 'utf8').trim();
+
+
+    const tokenIotaPath = path.join(__dirname, 'addresses', 'CrossChainToken_BNB.txt');
+    const remoteAddress = fs.readFileSync(tokenIotaPath, 'utf8').trim();
 
     const chainId = 10102; 
 

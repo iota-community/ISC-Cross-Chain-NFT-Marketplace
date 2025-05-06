@@ -12,7 +12,7 @@ async function deployCrossChainToken(lzEndpointAddress) {
 }
 
 async function main() {
-    const lzEndpointAddress = "0xae92d5aD7583AD66E49A0c67BAd18F6ba52dDDc1"; // Endpoint on Shimmer
+    const lzEndpointAddress = "0xae92d5aD7583AD66E49A0c67BAd18F6ba52dDDc1"; // Endpoint on Iota
     
     const deployedAddress = await deployCrossChainToken(lzEndpointAddress);
 
@@ -20,7 +20,7 @@ async function main() {
     const addressDirectory = path.join(__dirname, 'addresses');
     fs.mkdirSync(addressDirectory, { recursive: true });
 
-    const filePath = path.join(addressDirectory, 'CrossChainToken_Shimmer.txt');
+    const filePath = path.join(addressDirectory, 'CrossChainToken_Iota.txt');
     fs.writeFileSync(filePath, deployedAddress);
 
     console.log(`Contract address written to ${filePath}`);

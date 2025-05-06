@@ -25,8 +25,8 @@ async function main() {
 
 
 
-    const tokenShimmerPath = path.join(__dirname, 'addresses', 'CrossChainToken_Shimmer.txt');
-    const remoteAddress = fs.readFileSync(tokenShimmerPath, 'utf8').trim();
+    const tokenIotaPath = path.join(__dirname, 'addresses', 'CrossChainToken_Iota.txt');
+    const remoteAddress = fs.readFileSync(tokenIotaPath, 'utf8').trim();
 
     const chainId = 10230; 
 

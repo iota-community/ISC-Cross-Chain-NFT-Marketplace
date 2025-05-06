@@ -18,7 +18,7 @@ async function setTrustedRemote(remoteAddress ,myONFT721Address, chainId) {
 async function main() {
 
     const bnbONFTPath = path.join(__dirname, 'addresses', 'MyONFT721_Bnb.txt');
-    const myONFTAddressPath = path.join(__dirname, 'addresses', 'MyONFT721_Shimmer.txt');
+    const myONFTAddressPath = path.join(__dirname, 'addresses', 'MyONFT721_Iota.txt');
 
     const remoteAddress = fs.readFileSync(bnbONFTPath, 'utf8').trim();
     // Read the MyONFT721 address from the file to use as the myONFT721Address

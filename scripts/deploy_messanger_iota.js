@@ -12,7 +12,7 @@ async function deployCrossChainToken(lzEndpointAddress, marketplaceAddress) {
 }
 
 async function main() {
-    const lzEndpointAddress = "0xae92d5aD7583AD66E49A0c67BAd18F6ba52dDDc1"; // Endpoint on Shimmer
+    const lzEndpointAddress = "0x6C7Ab2202C98C4227C5c46f1417D81144DA716Ff"; // Endpoint on Iota
 
     const marketplaceAddress = fs.readFileSync(path.join(__dirname, 'addresses', 'NFTMarketplace.txt'), 'utf8');
     
@@ -22,7 +22,7 @@ async function main() {
     const addressDirectory = path.join(__dirname, 'addresses');
     fs.mkdirSync(addressDirectory, { recursive: true });
 
-    const filePath = path.join(addressDirectory, 'Messanger_shimmer.txt');
+    const filePath = path.join(addressDirectory, 'Messanger_iota.txt');
     fs.writeFileSync(filePath, deployedAddress);
 
     

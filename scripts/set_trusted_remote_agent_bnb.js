@@ -22,8 +22,8 @@ async function main() {
     const tokenAddressPath = path.join(__dirname, 'addresses', 'Messanger_bnb.txt');
     const myTokenAddress = fs.readFileSync(tokenAddressPath, 'utf8').trim();
 
-    const tokenShimmerPath = path.join(__dirname, 'addresses', 'Messanger_shimmer.txt');
-    const remoteAddress = fs.readFileSync(tokenShimmerPath, 'utf8').trim();
+    const tokenIotaPath = path.join(__dirname, 'addresses', 'Messanger_iota.txt');
+    const remoteAddress = fs.readFileSync(tokenIotaPath, 'utf8').trim();
 
     const chainId = 10230; 
 
